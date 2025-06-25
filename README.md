@@ -41,22 +41,15 @@ This project is a mobile image processing system developed to **automatically co
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="![IMG-20250613-WA0006](https://github.com/user-attachments/assets/334ec701-73cb-41c7-a33d-0fc870beb137)
-" width="220"/>
-  <img src="![IMG-20250613-WA0008](https://github.com/user-attachments/assets/5b4d1423-46a5-408e-a232-614380be0cb8)
-" width="220"/>
-  <img src="![IMG-20250613-WA0009](https://github.com/user-attachments/assets/c5241c26-f3a1-460a-9651-1cf08cbadc5a)
-" width="220"/>
+  <img src="https://github.com/user-attachments/assets/334ec701-73cb-41c7-a33d-0fc870beb137" width="220"/>
+  <img src="https://github.com/user-attachments/assets/5b4d1423-46a5-408e-a232-614380be0cb8" width="220"/>
+  <img src="https://github.com/user-attachments/assets/c5241c26-f3a1-460a-9651-1cf08cbadc5a" width="220"/>
 </p>
 <p align="center">
-  <img src="![IMG-20250613-WA0007](https://github.com/user-attachments/assets/7dbbbe0f-b694-43fb-bd6c-b5d44f9af7aa)
-" width="220"/>
-  <img src="![IMG-20250613-WA0010](https://github.com/user-attachments/assets/d87bc3b6-a571-413b-af90-abc374957fab)
-" width="220"/>
-  <img src="![IMG-20250613-WA0001](https://github.com/user-attachments/assets/d7f16290-1404-492b-870e-eb3a4bf5ba21)
-" width="220"/>
-  <img src="![IMG-20250613-WA0002](https://github.com/user-attachments/assets/ef82a50f-3d7a-47fe-8f53-6c7b0ff40f14)
-" width="220"/>
+  <img src="https://github.com/user-attachments/assets/7dbbbe0f-b694-43fb-bd6c-b5d44f9af7aa" width="220"/>
+  <img src="https://github.com/user-attachments/assets/d87bc3b6-a571-413b-af90-abc374957fab" width="220"/>
+  <img src="https://github.com/user-attachments/assets/d7f16290-1404-492b-870e-eb3a4bf5ba21" width="220"/>
+  <img src="https://github.com/user-attachments/assets/ef82a50f-3d7a-47fe-8f53-6c7b0ff40f14" width="220"/>
 </p>
 
 ---
