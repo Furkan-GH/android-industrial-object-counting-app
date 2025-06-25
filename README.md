@@ -1,5 +1,76 @@
-In this study, a mobile image processing system was developed to automatically count materials such as timber and pallets. The application is designed for Android devices and allows users to log in or register to start the counting process. Users can take a new photo or select one from their gallery. Then, they are asked to choose the type of object (timber or pallet), and the process continues based on this selection.
-The selected image is sent to a Raspberry Pi server that is made accessible from the internet using DuckDNS. A FastAPI-based backend is running on this server. Incoming tasks are added to a queue using RabbitMQ and processed one by one. The images are analyzed using pre-trained object detection models on the Roboflow platform. Detected objects are marked on the image, and the total count is shown to the user in the app.
-The application also stores the user's past queries with the date, object type, result, and image. All user data and logs are saved in a PostgreSQL database running on the Raspberry Pi. User authentication is securely handled with JSON Web Tokens (JWT) and the OAuth2 standard. Password security is supported with the bcrypt algorithm and Passlib library.
-This system provides a portable, low-cost, and modular image processing solution that can be used in similar counting tasks in different fields.
-![IMG-20250613-WA0001](https://github.com/user-attachments/assets/5e140656-4bac-4006-b57d-b12ddc187576)
+# 📱 Android-Based Industrial Object Counting
+
+This project is a mobile image processing system developed to **automatically count industrial materials** such as timber and pallets. It offers a **modular, low-cost, and portable** solution powered by AI.
+
+---
+
+## 🧠 How It Works
+
+1. 📸 **Take or select an image** via the Android app  
+2. 🔘 **Choose object type** (Timber or Pallet)  
+3. ☁️ The image is sent to a **Raspberry Pi server** over the internet (via DuckDNS)  
+4. 🕓 **FastAPI backend** adds it to a **RabbitMQ queue**  
+5. 🤖 Images are processed with **Roboflow object detection models**  
+6. ✅ **Results and marked images** are returned to the app  
+7. 📂 User history is saved with image, object type, date, and result
+
+---
+
+## 🔐 Authentication
+
+- 🔑 JSON Web Tokens (JWT) + OAuth2  
+- 🔒 Passwords hashed securely with **bcrypt + Passlib**  
+- 📦 All user data stored in a **PostgreSQL** database on Raspberry Pi
+
+---
+
+## 💡 Technologies Used
+
+| Component        | Technology                  |
+|------------------|-----------------------------|
+| 📱 Mobile App    | Android (Kotlin + Jetpack Compose) |
+| ☁️ Backend       | FastAPI (Python)            |
+| 📩 Queue         | RabbitMQ                    |
+| 🧠 AI Detection  | Roboflow                    |
+| 💾 Database      | PostgreSQL                  |
+| 🌍 Remote Access | DuckDNS + Port Forwarding   |
+| 🔐 Auth          | JWT + OAuth2 + Bcrypt       |
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="![IMG-20250613-WA0006](https://github.com/user-attachments/assets/334ec701-73cb-41c7-a33d-0fc870beb137)
+" width="220"/>
+  <img src="![IMG-20250613-WA0008](https://github.com/user-attachments/assets/5b4d1423-46a5-408e-a232-614380be0cb8)
+" width="220"/>
+  <img src="![IMG-20250613-WA0009](https://github.com/user-attachments/assets/c5241c26-f3a1-460a-9651-1cf08cbadc5a)
+" width="220"/>
+</p>
+<p align="center">
+  <img src="![IMG-20250613-WA0007](https://github.com/user-attachments/assets/7dbbbe0f-b694-43fb-bd6c-b5d44f9af7aa)
+" width="220"/>
+  <img src="![IMG-20250613-WA0010](https://github.com/user-attachments/assets/d87bc3b6-a571-413b-af90-abc374957fab)
+" width="220"/>
+  <img src="![IMG-20250613-WA0001](https://github.com/user-attachments/assets/d7f16290-1404-492b-870e-eb3a4bf5ba21)
+" width="220"/>
+  <img src="![IMG-20250613-WA0002](https://github.com/user-attachments/assets/ef82a50f-3d7a-47fe-8f53-6c7b0ff40f14)
+" width="220"/>
+</p>
+
+---
+
+## 🚀 Features
+
+- Easy-to-use Android interface  
+- Live object counting with AI  
+- Offline-friendly edge-server setup with Raspberry Pi  
+- Secure login/register system  
+- Full user history tracking  
+
+---
+
+## 📁 Repository Structure
+
+
