@@ -16,6 +16,55 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
+    primary = GreyPrimary,
+    secondary = GreySecondary,
+    tertiary = GreyTertiary,
+    background = GreyBackgroundDark,
+    surface = GreySurfaceDark,
+    onPrimary = TextOnPrimary,
+    onBackground = TextOnBackgroundDark,
+    onSurface = TextOnBackgroundDark
+)
+
+private val LightColorScheme = lightColorScheme(
+    primary = GreyPrimary,
+    secondary = GreySecondary,
+    tertiary = GreyTertiary,
+    background = GreyBackgroundLight,
+    surface = GreySurfaceLight,
+    onPrimary = TextOnPrimary,
+    onBackground = TextOnBackground,
+    onSurface = TextOnBackground
+)
+
+@Composable
+fun CameraXGuideTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicColor: Boolean = false, // senin özel paletin olduğundan dinamiği kapatıyoruz
+    content: @Composable () -> Unit
+) {
+    val colorScheme = when {
+        darkTheme -> DarkColorScheme
+        else -> LightColorScheme
+    }
+
+    val view = LocalView.current
+    if (!view.isInEditMode) {
+        SideEffect {
+            val window = (view.context as Activity).window
+            window.statusBarColor = colorScheme.primary.toArgb()
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
+        }
+    }
+
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography,
+        content = content
+    )
+}
+/*
+private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
     tertiary = Pink80
@@ -68,3 +117,5 @@ fun CameraXGuideTheme(
         content = content
     )
 }
+
+ */
